@@ -19,7 +19,7 @@ default_args = {
     'email_on_retry': False
 }
 
-dag = DAG('spakify_dag7',
+dag = DAG('spakify_main_dag',
           default_args=default_args,
           description='Load and transform data in Redshift with Airflow',
           schedule_interval='0 * * * *'
